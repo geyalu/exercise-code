@@ -2,11 +2,11 @@ package singleton;
 
 public class SingletonEnum {
 
-    public enum EasySingleton{
+    public enum EasySingleton {
         INSTANCE;
 
-        public void doSome(){
-            System.out.println("hah");
+        public void doSome() {
+            System.out.println("ha");
         }
     }
 
