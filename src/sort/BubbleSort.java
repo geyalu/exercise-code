@@ -16,6 +16,21 @@ public class BubbleSort {
         }
     }
 
+    public static void mybubbleSort(int[] data) {
+        for (int i = 0; i < data.length; i++) {
+            int num = data[i];
+            for (int j = i+1; j < data.length ; j++) {
+
+                //如果后一个数小于前一个数，则两个数互相交换位置
+                if (data[j] > data[j + 1]) {
+                    int tmp = data[j];
+                    data[j] = data[j + 1];
+                    data[j + 1] = tmp;
+                }
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
         int[] arr = {6, 3, 8, 2, 9, 1};
